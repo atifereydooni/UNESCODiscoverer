@@ -1,4 +1,4 @@
-package com.polaroid.unescodiscoverer.ui.theme
+package com.polaroid.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
