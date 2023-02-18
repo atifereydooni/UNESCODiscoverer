@@ -13,4 +13,8 @@ object Versions {
 
     // testing
     const val jUnitTest = "4.13.2"
+
+    //hilt
+    const val hilt = "2.40.1"
+    const val hiltNavigation = "1.0.0"
 }

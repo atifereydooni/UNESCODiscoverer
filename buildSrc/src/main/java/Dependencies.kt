@@ -14,4 +14,8 @@ object Dependencies {
     const val jUnitTest = "junit:junit:${Versions.jUnitTest}"
     const val composeUiTest = "androidx.compose.ui:ui-test-junit4:${Versions.compose}"
 
+    // hilt
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+    const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigation}"
+    const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
 }
