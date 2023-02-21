@@ -1,6 +1,8 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -40,6 +42,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:navigation"))
+
     //compose
     implementation(Dependencies.activityCompose)
     implementation(Dependencies.composeUI)
@@ -50,4 +54,10 @@ dependencies {
     testImplementation(Dependencies.jUnitTest)
     androidTestImplementation(Dependencies.composeUiTest)
 
+    //hilt
+    implementation(Dependencies.hilt)
+    kapt(Dependencies.hiltCompiler)
+
+    //gson
+    implementation(Dependencies.gson)
 }

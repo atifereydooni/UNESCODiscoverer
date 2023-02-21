@@ -18,4 +18,7 @@ object Dependencies {
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigation}"
     const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
+
+    //Gson
+    const val gson = "com.google.code.gson:gson:${Versions.gson}"
 }

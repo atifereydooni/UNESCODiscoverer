@@ -17,4 +17,8 @@ object Versions {
     //hilt
     const val hilt = "2.40.1"
     const val hiltNavigation = "1.0.0"
+
+    //Gson
+    const val gson = "2.8.9"
+
 }
