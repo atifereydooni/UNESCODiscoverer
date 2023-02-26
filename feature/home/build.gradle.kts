@@ -49,6 +49,7 @@ dependencies {
     implementation(Dependencies.composeUI)
     implementation(Dependencies.composeUiTooling)
     implementation(Dependencies.composeMaterial)
+    implementation(Dependencies.composeCoil)
 
     //testing
     testImplementation(Dependencies.jUnitTest)

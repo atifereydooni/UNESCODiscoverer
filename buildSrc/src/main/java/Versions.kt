@@ -10,6 +10,7 @@ object Versions {
     const val composeMaterial = "1.3.1"
     const val composeNavigation = "2.5.3"
     const val accompanistNavigation = "0.22.0-rc"
+    const val composeCoil = "2.1.0"
 
     // testing
     const val jUnitTest = "4.13.2"

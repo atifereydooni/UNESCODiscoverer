@@ -9,7 +9,7 @@ object Dependencies {
     const val composeMaterial = "androidx.compose.material:material:${Versions.composeMaterial}"
     const val composeNavigation = "androidx.navigation:navigation-compose:${Versions.composeNavigation}"
     const val accompanistNavigation = "com.google.accompanist:accompanist-navigation-animation:${Versions.accompanistNavigation}"
-
+    const val composeCoil = "io.coil-kt:coil-compose:${Versions.composeCoil}"
     // testing
     const val jUnitTest = "junit:junit:${Versions.jUnitTest}"
     const val composeUiTest = "androidx.compose.ui:ui-test-junit4:${Versions.compose}"
