@@ -13,7 +13,10 @@ private fun composableDestinations(): Map<NavigationDestination, @Composable () 
     mapOf(
         HomeDestination to {
             val homeViewModel: HomeViewModel = hiltViewModel()
-            HomeScreen(homeViewModel)
+            HomeScreen(
+                homeViewModel.unescoSiteState.value,
+                homeViewModel::getUNESCOSite
+            )
         }
     )
 
