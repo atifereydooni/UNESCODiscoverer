@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class GetUNESCOSiteUseCase @Inject constructor(private val repository: UNESCOSiteRepository) {
 
-    suspend fun getAllUNESCOSite(): List<UNESCOSiteEntity> {
-        return repository.getAllUNESCOSite()
+    suspend fun getAllUNESCOSite(page: Int): List<UNESCOSiteEntity> {
+        return repository.getAllUNESCOSite().sortedBy { it.id }.subList((page - 1) * 10, page * 10)
     }
 }
