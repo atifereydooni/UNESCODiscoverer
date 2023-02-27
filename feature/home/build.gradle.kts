@@ -13,7 +13,7 @@ android {
         minSdk = 21
         targetSdk = 33
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.polaroid.home.presentation.TestAppJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -57,6 +57,11 @@ dependencies {
     testImplementation(Dependencies.mockk)
     testImplementation(Dependencies.coreTesting)
     testImplementation(Dependencies.coroutinesTest)
+    kaptAndroidTest(Dependencies.hiltCompiler)
+    androidTestImplementation(Dependencies.hiltAndroidTest)
+    androidTestImplementation(Dependencies.jUnitRunner)
+    debugImplementation(Dependencies.composeTooling)
+    debugImplementation(Dependencies.composeManifest)
 
     //hilt
     implementation(Dependencies.hilt)

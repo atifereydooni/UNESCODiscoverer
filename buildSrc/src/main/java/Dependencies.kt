@@ -17,6 +17,11 @@ object Dependencies {
     const val coreTesting = "androidx.arch.core:core-testing:${Versions.coreTesting}"
     const val coroutinesTest =
         "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
+    const val hiltAndroidTest = "com.google.dagger:hilt-android-testing:${Versions.hilt}"
+    const val jUnitRunner = "androidx.test:runner:${Versions.jUnitRunner}"
+    const val composeTooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
+    const val composeManifest = "androidx.compose.ui:ui-test-manifest:${Versions.compose}"
+
     // hilt
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigation}"

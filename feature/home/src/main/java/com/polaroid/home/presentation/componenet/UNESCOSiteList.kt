@@ -12,8 +12,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import com.polaroid.home.presentation.ListState
 import com.polaroid.home.presentation.UNESCOSiteState
+
+const val TAG_LIST = "TAG_LIST"
 
 @Composable
 fun UNESCOSiteList(
@@ -23,7 +26,10 @@ fun UNESCOSiteList(
 
     val articles = unescoSiteState.UNESCOSiteList
 
-    LazyColumn(state = lazyColumnListState) {
+    LazyColumn(
+        modifier = Modifier.testTag(TAG_LIST),
+        state = lazyColumnListState
+    ) {
         itemsIndexed(articles) { _, item ->
             UNESCOSiteItem(item = item)
         }
