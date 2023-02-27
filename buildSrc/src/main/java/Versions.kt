@@ -14,6 +14,9 @@ object Versions {
 
     // testing
     const val jUnitTest = "4.13.2"
+    const val mockk = "1.12.0"
+    const val coreTesting = "2.1.0"
+    const val coroutines = "1.6.4"
 
     //hilt
     const val hilt = "2.40.1"

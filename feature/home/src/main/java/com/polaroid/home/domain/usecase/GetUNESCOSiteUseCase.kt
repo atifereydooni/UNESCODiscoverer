@@ -7,6 +7,10 @@ import javax.inject.Inject
 class GetUNESCOSiteUseCase @Inject constructor(private val repository: UNESCOSiteRepository) {
 
     suspend fun getAllUNESCOSite(page: Int): List<UNESCOSiteEntity> {
-        return repository.getAllUNESCOSite().sortedBy { it.id!!.toInt() }.subList((page - 1) * 10, page * 10)
+        val UNESCOSites = repository.getAllUNESCOSite()
+        return UNESCOSites.sortedBy { it.id!!.toInt() }.subList(
+            (page - 1) * 10,
+            if (page * 10 < UNESCOSites.size) page * 10 else UNESCOSites.size
+        )
     }
 }

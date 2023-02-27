@@ -54,6 +54,9 @@ dependencies {
     //testing
     testImplementation(Dependencies.jUnitTest)
     androidTestImplementation(Dependencies.composeUiTest)
+    testImplementation(Dependencies.mockk)
+    testImplementation(Dependencies.coreTesting)
+    testImplementation(Dependencies.coroutinesTest)
 
     //hilt
     implementation(Dependencies.hilt)
